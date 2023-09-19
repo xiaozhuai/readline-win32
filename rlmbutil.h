@@ -122,6 +122,6 @@ READLINE_DLL_IMPEXP int _rl_is_mbchar_matched PARAMS((char *, int, int, char *, 
 
 #endif /* !HANDLE_MULTIBYTE */
 
-READLINE_DLL_IMPEXP int rl_byte_oriented;
+READLINE_EXTERN int rl_byte_oriented;
 
 #endif /* _RL_MBUTIL_H_ */

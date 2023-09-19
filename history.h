@@ -238,26 +238,26 @@ READLINE_DLL_IMPEXP char *get_history_event PARAMS((const char *, int *, int));
 READLINE_DLL_IMPEXP char **history_tokenize PARAMS((const char *));
 
 /* Exported history variables. */
-READLINE_DLL_IMPEXP int history_base;
-READLINE_DLL_IMPEXP int history_length;
-READLINE_DLL_IMPEXP int history_max_entries;
-READLINE_DLL_IMPEXP char history_expansion_char;
-READLINE_DLL_IMPEXP char history_subst_char;
-READLINE_DLL_IMPEXP char *history_word_delimiters;
-READLINE_DLL_IMPEXP char history_comment_char;
-READLINE_DLL_IMPEXP char *history_no_expand_chars;
-READLINE_DLL_IMPEXP char *history_search_delimiter_chars;
-READLINE_DLL_IMPEXP int history_quotes_inhibit_expansion;
+READLINE_EXTERN int history_base;
+READLINE_EXTERN int history_length;
+READLINE_EXTERN int history_max_entries;
+READLINE_EXTERN char history_expansion_char;
+READLINE_EXTERN char history_subst_char;
+READLINE_EXTERN char *history_word_delimiters;
+READLINE_EXTERN char history_comment_char;
+READLINE_EXTERN char *history_no_expand_chars;
+READLINE_EXTERN char *history_search_delimiter_chars;
+READLINE_EXTERN int history_quotes_inhibit_expansion;
 
-READLINE_DLL_IMPEXP int history_write_timestamps;
+READLINE_EXTERN int history_write_timestamps;
 
 /* Backwards compatibility */
-READLINE_DLL_IMPEXP int max_input_history;
+READLINE_EXTERN int max_input_history;
 
 /* If set, this function is called to decide whether or not a particular
    history expansion should be treated as a special case for the calling
    application and not expanded. */
-READLINE_DLL_IMPEXP rl_linebuf_func_t *history_inhibit_expansion_function;
+READLINE_EXTERN rl_linebuf_func_t *history_inhibit_expansion_function;
 
 #ifdef __cplusplus
 }

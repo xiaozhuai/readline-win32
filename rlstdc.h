@@ -55,9 +55,9 @@
 #  define READLINE_DLL_IMPEXP     __DLL_EXPORT__
 # elif defined(READLINE_STATIC)
 #  define READLINE_DLL_IMPEXP      
-# elif defined (USE_READLINE_DLL)
+# elif defined(USE_READLINE_DLL)
 #  define READLINE_DLL_IMPEXP     __DLL_IMPORT__
-# elif defined (USE_READLINE_STATIC)
+# elif defined(USE_READLINE_STATIC)
 #  define READLINE_DLL_IMPEXP      
 # else /* assume USE_READLINE_DLL */
 #  define READLINE_DLL_IMPEXP     __DLL_IMPORT__
@@ -65,5 +65,7 @@
 #else /* __WIN32__ */
 # define READLINE_DLL_IMPEXP  
 #endif
+
+#define READLINE_EXTERN extern
 
 #endif /* !_RL_STDC_H_ */

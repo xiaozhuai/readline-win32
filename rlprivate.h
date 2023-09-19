@@ -41,24 +41,24 @@
  *************************************************************************/
 
 /* complete.c */
-READLINE_DLL_IMPEXP int rl_complete_with_tilde_expansion;
+READLINE_EXTERN int rl_complete_with_tilde_expansion;
 #if defined (VISIBLE_STATS)
-READLINE_DLL_IMPEXP int rl_visible_stats;
+READLINE_EXTERN int rl_visible_stats;
 #endif /* VISIBLE_STATS */
 
 /* readline.c */
-READLINE_DLL_IMPEXP int rl_line_buffer_len;
-READLINE_DLL_IMPEXP int rl_arg_sign;
-READLINE_DLL_IMPEXP int rl_visible_prompt_length;
-READLINE_DLL_IMPEXP int readline_echoing_p;
-READLINE_DLL_IMPEXP int rl_key_sequence_length;
-READLINE_DLL_IMPEXP int rl_byte_oriented;
+READLINE_EXTERN int rl_line_buffer_len;
+READLINE_EXTERN int rl_arg_sign;
+READLINE_EXTERN int rl_visible_prompt_length;
+READLINE_EXTERN int readline_echoing_p;
+READLINE_EXTERN int rl_key_sequence_length;
+READLINE_EXTERN int rl_byte_oriented;
 
 /* display.c */
-READLINE_DLL_IMPEXP int rl_display_fixed;
+READLINE_EXTERN int rl_display_fixed;
 
 /* parens.c */
-READLINE_DLL_IMPEXP int rl_blink_matching_paren;
+READLINE_EXTERN int rl_blink_matching_paren;
 
 /*************************************************************************
  *									 *
@@ -214,75 +214,75 @@ READLINE_DLL_IMPEXP void _rl_vi_done_inserting PARAMS((void));
  *************************************************************************/
 
 /* bind.c */
-READLINE_DLL_IMPEXP const char *_rl_possible_control_prefixes[];
-READLINE_DLL_IMPEXP const char *_rl_possible_meta_prefixes[];
+READLINE_EXTERN const char *_rl_possible_control_prefixes[];
+READLINE_EXTERN const char *_rl_possible_meta_prefixes[];
 
 /* complete.c */
-READLINE_DLL_IMPEXP int _rl_complete_show_all;
-READLINE_DLL_IMPEXP int _rl_complete_show_unmodified;
-READLINE_DLL_IMPEXP int _rl_complete_mark_directories;
-READLINE_DLL_IMPEXP int _rl_complete_mark_symlink_dirs;
-READLINE_DLL_IMPEXP int _rl_print_completions_horizontally;
-READLINE_DLL_IMPEXP int _rl_completion_case_fold;
-READLINE_DLL_IMPEXP int _rl_match_hidden_files;
-READLINE_DLL_IMPEXP int _rl_page_completions;
+READLINE_EXTERN int _rl_complete_show_all;
+READLINE_EXTERN int _rl_complete_show_unmodified;
+READLINE_EXTERN int _rl_complete_mark_directories;
+READLINE_EXTERN int _rl_complete_mark_symlink_dirs;
+READLINE_EXTERN int _rl_print_completions_horizontally;
+READLINE_EXTERN int _rl_completion_case_fold;
+READLINE_EXTERN int _rl_match_hidden_files;
+READLINE_EXTERN int _rl_page_completions;
 
 /* display.c */
-READLINE_DLL_IMPEXP int _rl_vis_botlin;
-READLINE_DLL_IMPEXP int _rl_last_c_pos;
-READLINE_DLL_IMPEXP int _rl_suppress_redisplay;
-READLINE_DLL_IMPEXP char *rl_display_prompt;
+READLINE_EXTERN int _rl_vis_botlin;
+READLINE_EXTERN int _rl_last_c_pos;
+READLINE_EXTERN int _rl_suppress_redisplay;
+READLINE_EXTERN char *rl_display_prompt;
 
 /* isearch.c */
-READLINE_DLL_IMPEXP char *_rl_isearch_terminators;
+READLINE_EXTERN char *_rl_isearch_terminators;
 
 /* macro.c */
-READLINE_DLL_IMPEXP char *_rl_executing_macro;
+READLINE_EXTERN char *_rl_executing_macro;
 
 /* misc.c */
-READLINE_DLL_IMPEXP int _rl_history_preserve_point;
-READLINE_DLL_IMPEXP int _rl_history_saved_point;
+READLINE_EXTERN int _rl_history_preserve_point;
+READLINE_EXTERN int _rl_history_saved_point;
 
 /* readline.c */
-READLINE_DLL_IMPEXP int _rl_horizontal_scroll_mode;
-READLINE_DLL_IMPEXP int _rl_mark_modified_lines;
-READLINE_DLL_IMPEXP int _rl_bell_preference;
-READLINE_DLL_IMPEXP int _rl_meta_flag;
-READLINE_DLL_IMPEXP int _rl_convert_meta_chars_to_ascii;
-READLINE_DLL_IMPEXP int _rl_output_meta_chars;
-READLINE_DLL_IMPEXP char *_rl_comment_begin;
-READLINE_DLL_IMPEXP unsigned char _rl_parsing_conditionalized_out;
-READLINE_DLL_IMPEXP Keymap _rl_keymap;
-READLINE_DLL_IMPEXP FILE *_rl_in_stream;
-READLINE_DLL_IMPEXP FILE *_rl_out_stream;
-READLINE_DLL_IMPEXP int _rl_last_command_was_kill;
-READLINE_DLL_IMPEXP int _rl_eof_char;
-READLINE_DLL_IMPEXP procenv_t readline_top_level;
+READLINE_EXTERN int _rl_horizontal_scroll_mode;
+READLINE_EXTERN int _rl_mark_modified_lines;
+READLINE_EXTERN int _rl_bell_preference;
+READLINE_EXTERN int _rl_meta_flag;
+READLINE_EXTERN int _rl_convert_meta_chars_to_ascii;
+READLINE_EXTERN int _rl_output_meta_chars;
+READLINE_EXTERN char *_rl_comment_begin;
+READLINE_EXTERN unsigned char _rl_parsing_conditionalized_out;
+READLINE_EXTERN Keymap _rl_keymap;
+READLINE_EXTERN FILE *_rl_in_stream;
+READLINE_EXTERN FILE *_rl_out_stream;
+READLINE_EXTERN int _rl_last_command_was_kill;
+READLINE_EXTERN int _rl_eof_char;
+READLINE_EXTERN procenv_t readline_top_level;
 
 /* terminal.c */
-READLINE_DLL_IMPEXP int _rl_enable_keypad;
-READLINE_DLL_IMPEXP int _rl_enable_meta;
-READLINE_DLL_IMPEXP char *_rl_term_clreol;
-READLINE_DLL_IMPEXP char *_rl_term_clrpag;
-READLINE_DLL_IMPEXP char *_rl_term_im;
-READLINE_DLL_IMPEXP char *_rl_term_ic;
-READLINE_DLL_IMPEXP char *_rl_term_ei;
-READLINE_DLL_IMPEXP char *_rl_term_DC;
-READLINE_DLL_IMPEXP char *_rl_term_up;
-READLINE_DLL_IMPEXP char *_rl_term_dc;
-READLINE_DLL_IMPEXP char *_rl_term_cr;
-READLINE_DLL_IMPEXP char *_rl_term_IC;
-READLINE_DLL_IMPEXP int _rl_screenheight;
-READLINE_DLL_IMPEXP int _rl_screenwidth;
-READLINE_DLL_IMPEXP int _rl_screenchars;
-READLINE_DLL_IMPEXP int _rl_terminal_can_insert;
-READLINE_DLL_IMPEXP int _rl_term_autowrap;
+READLINE_EXTERN int _rl_enable_keypad;
+READLINE_EXTERN int _rl_enable_meta;
+READLINE_EXTERN char *_rl_term_clreol;
+READLINE_EXTERN char *_rl_term_clrpag;
+READLINE_EXTERN char *_rl_term_im;
+READLINE_EXTERN char *_rl_term_ic;
+READLINE_EXTERN char *_rl_term_ei;
+READLINE_EXTERN char *_rl_term_DC;
+READLINE_EXTERN char *_rl_term_up;
+READLINE_EXTERN char *_rl_term_dc;
+READLINE_EXTERN char *_rl_term_cr;
+READLINE_EXTERN char *_rl_term_IC;
+READLINE_EXTERN int _rl_screenheight;
+READLINE_EXTERN int _rl_screenwidth;
+READLINE_EXTERN int _rl_screenchars;
+READLINE_EXTERN int _rl_terminal_can_insert;
+READLINE_EXTERN int _rl_term_autowrap;
 
 /* undo.c */
-READLINE_DLL_IMPEXP int _rl_doing_an_undo;
-READLINE_DLL_IMPEXP int _rl_undo_group_level;
+READLINE_EXTERN int _rl_doing_an_undo;
+READLINE_EXTERN int _rl_undo_group_level;
 
 /* vi_mode.c */
-READLINE_DLL_IMPEXP int _rl_vi_last_command;
+READLINE_EXTERN int _rl_vi_last_command;
 
 #endif /* _RL_PRIVATE_H_ */
