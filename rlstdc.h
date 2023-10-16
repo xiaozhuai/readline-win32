@@ -46,8 +46,8 @@
 # define __DLL_IMPORT__  __declspec(dllimport)
 # define __DLL_EXPORT__  __declspec(dllexport)
 #else
-# define __DLL_IMPORT__  __attribute__((dllimport)) extern
-# define __DLL_EXPORT__  __attribute__((dllexport)) extern
+# define __DLL_IMPORT__  __attribute__((dllimport))
+# define __DLL_EXPORT__  __attribute__((dllexport))
 #endif 
 
 #if (defined __WIN32__) || (defined _WIN32)
@@ -66,6 +66,6 @@
 # define READLINE_DLL_IMPEXP  
 #endif
 
-#define READLINE_EXTERN extern
+#define READLINE_EXTERN READLINE_DLL_IMPEXP extern
 
 #endif /* !_RL_STDC_H_ */
