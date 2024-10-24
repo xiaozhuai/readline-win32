@@ -47,7 +47,7 @@
 #  define HAVE_STRCOLL 1
 #endif
 
-#if defined (__STDC__) && defined (HAVE_STDARG_H)
+#if (defined (__STDC__) || defined (_MSC_VER)) && defined (HAVE_STDARG_H)
 #  define PREFER_STDARG
 #  define USE_VARARGS
 #else
